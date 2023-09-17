@@ -7,8 +7,49 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <script>
+        function changeText(id) {
+            id.innerHTML = "NEW WORLD";
+        }
+    </script>
+    <script>
+        function Cyears (form) {
+            form.dogage.value = form.myage.value * 7 ;
+        }
+    </script>
+    <script>
+        function cyears (form) {
+            form.myage.value = form.dogage.value / 7 ;
+        }
+    </script>
+    
 </head>
 <body>
-    <h2>Hello World</h2>
+    <h2  onclick="changeText(this)">HELLO WORLD</h2>
+
+    <form method="post">
+        <table>
+            <tr>
+                <td>Enter your age :</td>
+                <td><Input type="text" name="myage" size="15"></Input></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="CALCULATE" onclick="Cyears(this.form)">
+                </td>
+            </tr>
+            <tr>
+                <td>Your age in Dog years is :</td>
+                <td>
+                    <input type="text" name="dogage" size="15"></input>
+                </td>
+            </tr>
+            <tr>    
+                <td>
+                    <input type="button" value="CALCULATE" onclick="cyears(this.form)">
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>  
