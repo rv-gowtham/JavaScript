@@ -48,3 +48,19 @@ function square(number) {
 
 let number = square(2);
 console.log(number);
+
+function changeText(id) {
+    id.innerHTML = "NEW WORLD";
+}
+
+function Cyears (form) {
+    form.dogage.value = form.myage.value * 7 ;
+}
+
+function cyears (form) {
+    form.myage.value = form.dogage.value / 7 ;
+}
+
+function addtwonumber (form) {
+    form.Answer.value = form.first.value * 5 ;
+}
