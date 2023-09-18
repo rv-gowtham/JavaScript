@@ -1,3 +1,5 @@
+window.alert("Unusual Content");
+
 console.log("Hello World");
 let rate = 10 ;
 rate = 20;
@@ -64,3 +66,4 @@ function cyears (form) {
 function addtwonumber (form) {
     form.Answer.value = form.first.value * 5 ;
 }
+
